@@ -41,9 +41,11 @@ namespace Exercise
             int a = Convert.ToInt32(Console.ReadLine());
             Console.Write("Nhap so b: ");
             int b = Convert.ToInt32(Console.ReadLine());
-
-            Console.WriteLine($"a = {b}");
-            Console.WriteLine($"b = {a}");
+            int c = a;
+            a = b; b = c;
+           
+            Console.WriteLine($"a = {a}");
+            Console.WriteLine($"b = {b}");
 
 
         }
